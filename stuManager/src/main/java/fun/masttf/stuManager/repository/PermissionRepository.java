@@ -1,0 +1,10 @@
+package fun.masttf.stuManager.repository;
+
+import fun.masttf.stuManager.entity.Permission;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+
+public interface PermissionRepository extends JpaRepository<Permission,Long>, JpaSpecificationExecutor<Permission> {
+    Permission findByName(String permissionName);
+
+}

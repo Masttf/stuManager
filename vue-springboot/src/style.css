@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+      to right,
+      rgb(113, 65, 168),
+      rgba(44, 114, 251, 1)
+    );
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+#app{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
