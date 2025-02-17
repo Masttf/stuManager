@@ -86,12 +86,6 @@
 	</dependencies>
 
 	<build>
-		<resources>
-			<resource>
-				<directory>${project.basedir}/vue-springboot/dist</directory>
-				<targetPath>static</targetPath>
-			</resource>
-		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

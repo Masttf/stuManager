@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Work72ApplicationTests {
+class stuManagerApplicationTests {
 	@Autowired
 	private JwtUtil jwtUtil;
 	@Autowired
@@ -40,14 +40,14 @@ class Work72ApplicationTests {
 		userService.addRole("user","user");
 		roleService.addPermission("admin","admin");
 		roleService.addPermission("user","user");
-		// for(Integer i = 1; i <= 20; i++){
-		// 	Student student = new Student();
-		// 	student.setName("stu"+i);
-		// 	student.setAge(18 + i);
-		// 	student.setGpa(5.0 - i * 0.1);
-		// 	if(i % 2 == 1)student.setSex("男");
-		// 	else student.setSex("女");
-		// 	studentService.add(student);
-		// }
+		for(Integer i = 1; i <= 20; i++){
+			Student student = new Student();
+			student.setName("stu"+i);
+			student.setAge(18 + i);
+			student.setGpa(5.0 - i * 0.1);
+			if(i % 2 == 1)student.setSex("男");
+			else student.setSex("女");
+			studentService.add(student);
+		}
 	}
 }

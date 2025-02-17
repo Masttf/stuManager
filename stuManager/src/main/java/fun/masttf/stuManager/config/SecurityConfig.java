@@ -58,6 +58,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
                 // 开放登录接口和Swagger文档接口
                 .antMatchers(
+                        "/index.html",
+                        "/assets/**",
                         "/login",
                         "/swagger-resources/**",
                         "/webjars/**",
