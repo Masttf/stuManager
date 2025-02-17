@@ -1,6 +1,6 @@
 ## 学生管理系统
 
-![展示图片](/src/images/image.png)
+![展示图片](https://github.com/Masttf/stuManager/blob/master/src/images/image.png)
 
 ### 项目结构
 
